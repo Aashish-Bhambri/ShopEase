@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Filters = ({ category, setCategory, range, setRange, brand }) => {
+const Filters = ({ category, setCategory, range, setRange, filterBrand, setFilterBrand, brands = [] }) => {
+    const [draftRange, setDraftRange] = useState(range)
+
     const categories = [
         "Men's Fashion",
         "Women's Fashion",
@@ -9,17 +11,18 @@ const Filters = ({ category, setCategory, range, setRange, brand }) => {
         "Beauty & Personal Care",
         "Sports & Outdoors"
     ]
-    
+    const categoryBrands = brands.find((item) => item.id === category)?.brand ?? []
+
     return (
         // Added max-w-sm to restrain size, min-w-[280px] to prevent extreme compression, and right-border separation
         <div className='flex flex-col p-6 w-full max-w-xs min-w-[280px] border-r border-gray-200 bg-white gap-6 h-screen '>
-            
+
             {/* Header section */}
             <h2 className='font-bold text-2xl text-gray-800 tracking-tight'>Filters</h2>
-            
+
             {/* Cleaner divider item */}
             <hr className='border-gray-200' />
-            
+
             {/* Categories segment */}
             <div className='flex flex-col gap-3'>
                 <span className='text-[18px] font-semibold text-gray-700 mb-1'>Category</span>
@@ -33,11 +36,12 @@ const Filters = ({ category, setCategory, range, setRange, brand }) => {
                                 value={cat}
                                 checked={category === cat}
                                 onChange={(e) => {
-                                    setCategory(category === cat ? "" : e.target.value);
+                                    setCategory(category === cat ? "" : e.target.value)
+                                    setFilterBrand("")
                                 }}
                             />
-                            <label 
-                                htmlFor={cat.replaceAll(' ', '')} 
+                            <label
+                                htmlFor={cat.replaceAll(' ', '')}
                                 className='text-sm text-gray-600 font-medium cursor-pointer group-hover:text-black transition-colors'
                             >
                                 {cat}
@@ -46,30 +50,34 @@ const Filters = ({ category, setCategory, range, setRange, brand }) => {
                     ))}
                 </div>
             </div>
-            
+
             <hr className='border-gray-200' />
 
             {/* Price Slider Component */}
             <div className='flex flex-col gap-3'>
                 <span className='font-semibold text-[18px] text-gray-700'>Price range</span>
-                
+
                 {/* Made range slider take full width of the filter block */}
-                <input 
-                    className='w-full accent-black cursor-pointer h-1.5 bg-gray-200 rounded-lg appearance-none' 
-                    type='range' 
-                    min={50} 
-                    max={5000} 
-                    value={range} 
-                    onChange={(e) => setRange(e.target.value)}
+                <input
+                    className='w-full accent-black cursor-pointer h-1.5 bg-gray-200 rounded-lg appearance-none'
+                    type='range'
+                    min={50}
+                    max={5000}
+                    value={draftRange}
+                    onChange={(e) => setDraftRange(Number(e.target.value))}
                 />
-                
+
                 {/* Synchronized layout positions for bottom display counts */}
                 <div className='flex justify-between w-full text-xs font-semibold text-gray-500 px-0.5'>
                     <div>$50</div>
-                    <div className='text-black font-bold'>${range}</div>
+                    <div className='text-black font-bold'>${draftRange}</div>
                 </div>
-                
-                <button className='w-full bg-black hover:bg-gray-800 transition-colors font-medium rounded-xl text-white py-2 mt-2 text-sm shadow-sm'>
+
+                <button
+                    type='button'
+                    onClick={() => setRange(draftRange)}
+                    className='w-full bg-black hover:bg-gray-800 transition-colors font-medium rounded-xl text-white py-2 mt-2 text-sm shadow-sm'
+                >
                     Apply
                 </button>
             </div>
@@ -79,23 +87,30 @@ const Filters = ({ category, setCategory, range, setRange, brand }) => {
             {/* Brands segment */}
             <div className='flex flex-col gap-3 pb-6'>
                 <span className='font-semibold text-[18px] text-gray-700 mb-1'>Brand</span>
+
                 <div className='flex flex-col gap-2'>
-                    {brand.map((brd) => (
-                        <div key={brd} className='flex items-center gap-3 cursor-pointer group'>
-                            <input 
-                                type='checkbox' 
-                                id={brd} 
-                                className='h-4 w-4 accent-black cursor-pointer rounded' 
+                    {categoryBrands.length > 0 ? categoryBrands.map((item) => (
+                        <div key={item} className='flex items-center gap-3 cursor-pointer group'>
+                            <input
+                                type='checkbox'
+                                id={`brand-${item}`}
+                                value={item}
+                                checked={filterBrand === item}
+                                className='h-4 w-4 accent-black cursor-pointer rounded'
+                                onChange={(e) => setFilterBrand(filterBrand === item ? "" : e.target.value)}
                             />
-                            <label 
-                                htmlFor={brd} 
+                            <label
+                                htmlFor={`brand-${item}`}
                                 className='text-sm text-gray-600 font-medium cursor-pointer group-hover:text-black transition-colors'
                             >
-                                {brd}
+                                {item}
                             </label>
                         </div>
-                    ))}
+                    )) : (
+                        <span className='text-sm text-gray-500'>Select a category to see brands.</span>
+                    )}
                 </div>
+
             </div>
         </div>
     )

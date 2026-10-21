@@ -1,8 +1,11 @@
 
 import { Link, NavLink } from "react-router-dom";
 import { Search, UserRound, ShoppingCart } from "lucide-react";
+import { useState } from "react";
 
-const Navbar = ({searchText,setSearchText}) => {
+const Navbar = ({ isSearchOpen, setIsSearchOpen }) => {
+  const [highlight, setHighlight] = useState("")
+
   const cartCount = 2;
 
   const navLinks = [
@@ -11,6 +14,10 @@ const Navbar = ({searchText,setSearchText}) => {
     { name: "Categories", path: "/categories" },
     { name: "About", path: "/about" },
   ];
+
+  const openSearch = () => {
+    setIsSearchOpen(!isSearchOpen)
+  }
   return (
     <header className="bg-white flex flex-col">
       <nav className="container flex min-h-[80px] items-center justify-between gap-6">
@@ -29,8 +36,7 @@ const Navbar = ({searchText,setSearchText}) => {
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors hover:text-muted ${
-                  isActive ? "text-foreground" : "text-muted"
+                `text-sm font-medium transition-colors hover:text-muted ${isActive ? "text-foreground" : "text-muted"
                 }`
               }
             >
@@ -53,13 +59,12 @@ const Navbar = ({searchText,setSearchText}) => {
         >
           <Search size={20} className="shrink-0 text-muted" />
           <input
-            value={searchText}
             type="search"
             name="search"
             placeholder="Search for products..."
             aria-label="Search for products"
             className="w-full bg-transparent text-sm text-foreground outline-none placeholder:text-muted"
-            onChange={(e)=>setSearchText(e.target.value)}
+            onClick={openSearch}
           />
         </form>
 
@@ -84,10 +89,10 @@ const Navbar = ({searchText,setSearchText}) => {
             </span>
           </Link>
         </div>
-        
+
       </nav>
-            <span className='border border-gray-200 w-full '></span>
-      
+      <span className='border border-gray-200 w-full '></span>
+
     </header>
   );
 };

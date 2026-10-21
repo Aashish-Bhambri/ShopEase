@@ -4,20 +4,21 @@ import BelowHeroSection from '../components/BelowHeroSection';
 import ShopByCategory from '../components/ShopByCategory';
 import BestSeller from '../components/BestSeller';
 import Home_banner from '../assets/Home_banner.png'
-
+  
 const Home = () => {
   const banner = {
     backgroundImage: `url(${Home_banner})`,
     width: "100%",
     height: "400px",
     backgroundPosition: 'top',
-    backgroundSize: "cover", 
+    backgroundSize: "cover",
     backgroundRepeat: "no-repeat"
   };
 
 
   return (
     <div className=' max-w-7xl mx-auto  h-full gap-2'>
+      
       <div className='w-full h-135 object-contain mt-2  '>
         <HeroSection />
       </div>
