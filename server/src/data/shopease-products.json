@@ -1,0 +1,1966 @@
+{
+  "store": {
+    "name": "ShopEase",
+    "description": "A modern multi-category online storefront starter catalog.",
+    "currency": "USD",
+    "imageSource": "Unsplash image URLs; verify image suitability and licensing before production."
+  },
+  "categories": [
+    "Men's Fashion",
+    "Sports & Outdoors",
+    "Women's Fashion",
+    "Accessories",
+    "Electronics",
+    "Home & Living",
+    "Beauty & Personal Care",
+    "Stationery",
+    "Kids & Baby",
+    "Pet Supplies"
+  ],
+  "products": [
+    {
+      "id": "prod_001",
+      "name": "Nike Air Force 1",
+      "slug": "nike-air-force-1",
+      "category": "Men's Fashion",
+      "brand": "Nike",
+      "price": 120,
+      "originalPrice": 150,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 1200,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Classic everyday sneakers with a clean silhouette and cushioned comfort.",
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "stock": 32,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "sneakers",
+        "casual",
+        "bestseller"
+      ]
+    },
+    {
+      "id": "prod_002",
+      "name": "Ultraboost Running Shoes",
+      "slug": "ultraboost-running-shoes",
+      "category": "Sports & Outdoors",
+      "brand": "Adidas",
+      "price": 160,
+      "originalPrice": 190,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 864,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Responsive running shoes designed for everyday training and long walks.",
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "stock": 21,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "running",
+        "sports"
+      ]
+    },
+    {
+      "id": "prod_003",
+      "name": "Classic Canvas Sneakers",
+      "slug": "classic-canvas-sneakers",
+      "category": "Women's Fashion",
+      "brand": "Converse",
+      "price": 65,
+      "originalPrice": 80,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 432,
+      "image": "https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Versatile canvas sneakers that pair effortlessly with everyday outfits.",
+      "colors": [
+        "Cream",
+        "Black",
+        "Blue"
+      ],
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "stock": 45,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "sneakers",
+        "casual"
+      ]
+    },
+    {
+      "id": "prod_004",
+      "name": "Leather Chelsea Boots",
+      "slug": "leather-chelsea-boots",
+      "category": "Men's Fashion",
+      "brand": "UrbanCraft",
+      "price": 135,
+      "originalPrice": 165,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 318,
+      "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Smart leather boots with a streamlined profile and durable sole.",
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "stock": 14,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "boots",
+        "leather"
+      ]
+    },
+    {
+      "id": "prod_005",
+      "name": "Everyday Running Trainers",
+      "slug": "everyday-running-trainers",
+      "category": "Sports & Outdoors",
+      "brand": "PaceLab",
+      "price": 89,
+      "originalPrice": 110,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 276,
+      "image": "https://images.unsplash.com/photo-1460353581641-37bAddab0fa2?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1460353581641-37bAddab0fa2?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Lightweight trainers built for daily movement and comfortable support.",
+      "colors": [
+        "Grey",
+        "Blue"
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "stock": 38,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "running",
+        "fitness"
+      ]
+    },
+    {
+      "id": "prod_006",
+      "name": "Oversized Cotton T-Shirt",
+      "slug": "oversized-cotton-t-shirt",
+      "category": "Men's Fashion",
+      "brand": "Northline",
+      "price": 28,
+      "originalPrice": 35,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 540,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Soft cotton tee with a relaxed fit for easy everyday layering.",
+      "colors": [
+        "White",
+        "Black",
+        "Olive"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 70,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "basics",
+        "cotton"
+      ]
+    },
+    {
+      "id": "prod_007",
+      "name": "Classic Denim Jacket",
+      "slug": "classic-denim-jacket",
+      "category": "Men's Fashion",
+      "brand": "BlueHarbor",
+      "price": 78,
+      "originalPrice": 95,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 296,
+      "image": "https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A timeless denim layer with a comfortable fit and versatile wash.",
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 24,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "denim",
+        "outerwear"
+      ]
+    },
+    {
+      "id": "prod_008",
+      "name": "Women's Knit Sweater",
+      "slug": "womens-knit-sweater",
+      "category": "Women's Fashion",
+      "brand": "Thread & Co.",
+      "price": 58,
+      "originalPrice": 72,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 411,
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A soft knit sweater made for cool mornings and relaxed weekends.",
+      "colors": [
+        "Beige",
+        "Cream",
+        "Grey"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "stock": 29,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "knitwear",
+        "winter"
+      ]
+    },
+    {
+      "id": "prod_009",
+      "name": "Relaxed Fit Jeans",
+      "slug": "relaxed-fit-jeans",
+      "category": "Women's Fashion",
+      "brand": "Denim House",
+      "price": 64,
+      "originalPrice": 79,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 357,
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Easy-to-style denim with a relaxed fit and all-day comfort.",
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "sizes": [
+        "26",
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "stock": 42,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "denim",
+        "casual"
+      ]
+    },
+    {
+      "id": "prod_010",
+      "name": "Minimalist Wristwatch",
+      "slug": "minimalist-wristwatch",
+      "category": "Accessories",
+      "brand": "Chrono",
+      "price": 145,
+      "originalPrice": 180,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 932,
+      "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A minimalist watch with a clean dial and a versatile everyday strap.",
+      "colors": [
+        "Black",
+        "Silver",
+        "Brown"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 18,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "watch",
+        "accessories"
+      ]
+    },
+    {
+      "id": "prod_011",
+      "name": "Wireless Over-Ear Headphones",
+      "slug": "wireless-over-ear-headphones",
+      "category": "Electronics",
+      "brand": "SoundPeak",
+      "price": 99,
+      "originalPrice": 129,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 856,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Immersive wireless audio with plush ear cushions and a foldable design.",
+      "colors": [
+        "Black",
+        "Cream",
+        "Blue"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 27,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "audio",
+        "wireless"
+      ]
+    },
+    {
+      "id": "prod_012",
+      "name": "Bluetooth Earbuds",
+      "slug": "bluetooth-earbuds",
+      "category": "Electronics",
+      "brand": "SoundPeak",
+      "price": 59,
+      "originalPrice": 79,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 682,
+      "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Compact earbuds with a pocket-sized charging case for daily listening.",
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 53,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "audio",
+        "wireless"
+      ]
+    },
+    {
+      "id": "prod_013",
+      "name": "Portable Bluetooth Speaker",
+      "slug": "portable-bluetooth-speaker",
+      "category": "Electronics",
+      "brand": "BoomBox",
+      "price": 49,
+      "originalPrice": 65,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 492,
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Portable speaker with rich sound for desk setups and weekend trips.",
+      "colors": [
+        "Black",
+        "Blue",
+        "Red"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 31,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "audio",
+        "portable"
+      ]
+    },
+    {
+      "id": "prod_014",
+      "name": "Smartwatch Series 9",
+      "slug": "smartwatch-series-9",
+      "category": "Electronics",
+      "brand": "Pulse",
+      "price": 249,
+      "originalPrice": 299,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 742,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A versatile smartwatch for activity tracking, notifications, and daily routines.",
+      "colors": [
+        "Black",
+        "Silver",
+        "Rose Gold"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 16,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "wearable",
+        "fitness"
+      ]
+    },
+    {
+      "id": "prod_015",
+      "name": "Mechanical Gaming Keyboard",
+      "slug": "mechanical-gaming-keyboard",
+      "category": "Electronics",
+      "brand": "KeyForge",
+      "price": 89,
+      "originalPrice": 119,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 613,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Responsive mechanical keys and a compact layout for work or gaming.",
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 22,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "gaming",
+        "desk"
+      ]
+    },
+    {
+      "id": "prod_016",
+      "name": "Wireless Gaming Mouse",
+      "slug": "wireless-gaming-mouse",
+      "category": "Electronics",
+      "brand": "KeyForge",
+      "price": 54,
+      "originalPrice": 69,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 388,
+      "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A lightweight wireless mouse with precise tracking and customizable controls.",
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 34,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "gaming",
+        "desk"
+      ]
+    },
+    {
+      "id": "prod_017",
+      "name": "Ultralight Laptop Backpack",
+      "slug": "ultralight-laptop-backpack",
+      "category": "Sports & Outdoors",
+      "brand": "TrailWorks",
+      "price": 79,
+      "originalPrice": 99,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 529,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A practical backpack with organized storage for commuting and travel.",
+      "colors": [
+        "Black",
+        "Olive",
+        "Navy"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 26,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "backpack",
+        "travel"
+      ]
+    },
+    {
+      "id": "prod_018",
+      "name": "Everyday Crossbody Bag",
+      "slug": "everyday-crossbody-bag",
+      "category": "Accessories",
+      "brand": "CarryKind",
+      "price": 45,
+      "originalPrice": 59,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviewCount": 247,
+      "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A compact crossbody bag that keeps daily essentials close at hand.",
+      "colors": [
+        "Tan",
+        "Black",
+        "Cream"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 41,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "bag",
+        "everyday"
+      ]
+    },
+    {
+      "id": "prod_019",
+      "name": "Classic Leather Wallet",
+      "slug": "classic-leather-wallet",
+      "category": "Accessories",
+      "brand": "CarryKind",
+      "price": 35,
+      "originalPrice": 45,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 390,
+      "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Slim wallet with practical card slots and a refined leather finish.",
+      "colors": [
+        "Black",
+        "Brown"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 57,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "wallet",
+        "leather"
+      ]
+    },
+    {
+      "id": "prod_020",
+      "name": "Everyday Baseball Cap",
+      "slug": "everyday-baseball-cap",
+      "category": "Accessories",
+      "brand": "Northline",
+      "price": 22,
+      "originalPrice": 29,
+      "currency": "USD",
+      "rating": 4.2,
+      "reviewCount": 368,
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "An adjustable cap with a curved brim and understated styling.",
+      "colors": [
+        "Black",
+        "Navy",
+        "Cream"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 63,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "cap",
+        "casual"
+      ]
+    },
+    {
+      "id": "prod_021",
+      "name": "Polarized Sunglasses",
+      "slug": "polarized-sunglasses",
+      "category": "Accessories",
+      "brand": "Sunform",
+      "price": 39,
+      "originalPrice": 49,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 604,
+      "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Lightweight sunglasses with polarized lenses for sunny days.",
+      "colors": [
+        "Black",
+        "Tortoise"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 36,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "sunglasses",
+        "summer"
+      ]
+    },
+    {
+      "id": "prod_022",
+      "name": "Everyday Ceramic Mug",
+      "slug": "everyday-ceramic-mug",
+      "category": "Home & Living",
+      "brand": "Hearth & Home",
+      "price": 18,
+      "originalPrice": 24,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 714,
+      "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A sturdy ceramic mug with a comfortable handle for your daily coffee.",
+      "colors": [
+        "White",
+        "Sage",
+        "Terracotta"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 84,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "kitchen",
+        "ceramic"
+      ]
+    },
+    {
+      "id": "prod_023",
+      "name": "Minimal Desk Lamp",
+      "slug": "minimal-desk-lamp",
+      "category": "Home & Living",
+      "brand": "FormLiving",
+      "price": 42,
+      "originalPrice": 55,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 286,
+      "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A clean-lined desk lamp that adds focused light to a reading nook or workspace.",
+      "colors": [
+        "Black",
+        "White",
+        "Brass"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 19,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "lighting",
+        "desk"
+      ]
+    },
+    {
+      "id": "prod_024",
+      "name": "Accent Lounge Chair",
+      "slug": "accent-lounge-chair",
+      "category": "Home & Living",
+      "brand": "FormLiving",
+      "price": 229,
+      "originalPrice": 279,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 163,
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A contemporary accent chair with a supportive seat and soft upholstery.",
+      "colors": [
+        "Beige",
+        "Grey",
+        "Olive"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 8,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "furniture",
+        "living room"
+      ]
+    },
+    {
+      "id": "prod_025",
+      "name": "Textured Cushion Cover",
+      "slug": "textured-cushion-cover",
+      "category": "Home & Living",
+      "brand": "Hearth & Home",
+      "price": 24,
+      "originalPrice": 32,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviewCount": 218,
+      "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A textured cushion cover that adds a soft, layered finish to a sofa.",
+      "colors": [
+        "Cream",
+        "Rust",
+        "Sage"
+      ],
+      "sizes": [
+        "18 x 18 in"
+      ],
+      "stock": 48,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "decor",
+        "textile"
+      ]
+    },
+    {
+      "id": "prod_026",
+      "name": "Soft Knit Throw Blanket",
+      "slug": "soft-knit-throw-blanket",
+      "category": "Home & Living",
+      "brand": "Hearth & Home",
+      "price": 49,
+      "originalPrice": 65,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 342,
+      "image": "https://images.unsplash.com/photo-1600369671236-e74521d4b6ad?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1600369671236-e74521d4b6ad?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A cozy throw blanket for sofas, beds, and cool evenings.",
+      "colors": [
+        "Cream",
+        "Grey",
+        "Terracotta"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 23,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "blanket",
+        "comfort"
+      ]
+    },
+    {
+      "id": "prod_027",
+      "name": "Stainless Steel Water Bottle",
+      "slug": "stainless-steel-water-bottle",
+      "category": "Sports & Outdoors",
+      "brand": "TrailWorks",
+      "price": 28,
+      "originalPrice": 36,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 503,
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A reusable insulated bottle for commutes, workouts, and travel.",
+      "colors": [
+        "Black",
+        "Steel",
+        "Sage"
+      ],
+      "sizes": [
+        "500 ml",
+        "750 ml"
+      ],
+      "stock": 62,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "hydration",
+        "outdoors"
+      ]
+    },
+    {
+      "id": "prod_028",
+      "name": "Yoga Mat",
+      "slug": "yoga-mat",
+      "category": "Sports & Outdoors",
+      "brand": "FlexForm",
+      "price": 39,
+      "originalPrice": 49,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 458,
+      "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A grippy exercise mat for stretching, yoga, and home workouts.",
+      "colors": [
+        "Lavender",
+        "Black",
+        "Sage"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 25,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "fitness",
+        "yoga"
+      ]
+    },
+    {
+      "id": "prod_029",
+      "name": "Adjustable Dumbbell",
+      "slug": "adjustable-dumbbell",
+      "category": "Sports & Outdoors",
+      "brand": "FlexForm",
+      "price": 119,
+      "originalPrice": 149,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 192,
+      "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Space-saving strength equipment for a versatile home workout setup.",
+      "colors": [
+        "Black"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 11,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "fitness",
+        "strength"
+      ]
+    },
+    {
+      "id": "prod_030",
+      "name": "Travel Duffel Bag",
+      "slug": "travel-duffel-bag",
+      "category": "Sports & Outdoors",
+      "brand": "TrailWorks",
+      "price": 69,
+      "originalPrice": 89,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 307,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A roomy duffel with grab handles and a shoulder strap for short trips.",
+      "colors": [
+        "Black",
+        "Olive",
+        "Navy"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 20,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "travel",
+        "bag"
+      ]
+    },
+    {
+      "id": "prod_031",
+      "name": "Hydrating Face Serum",
+      "slug": "hydrating-face-serum",
+      "category": "Beauty & Personal Care",
+      "brand": "GlowTheory",
+      "price": 32,
+      "originalPrice": 42,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 572,
+      "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A lightweight hydrating serum designed to layer easily into a daily skincare routine.",
+      "colors": [
+        "Clear"
+      ],
+      "sizes": [
+        "30 ml"
+      ],
+      "stock": 44,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "skincare",
+        "hydration"
+      ]
+    },
+    {
+      "id": "prod_032",
+      "name": "Daily Moisturizer",
+      "slug": "daily-moisturizer",
+      "category": "Beauty & Personal Care",
+      "brand": "GlowTheory",
+      "price": 26,
+      "originalPrice": 34,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 491,
+      "image": "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A daily moisturizer with a smooth texture for a comfortable skin feel.",
+      "colors": [
+        "White"
+      ],
+      "sizes": [
+        "50 ml"
+      ],
+      "stock": 39,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "skincare",
+        "moisturizer"
+      ]
+    },
+    {
+      "id": "prod_033",
+      "name": "Gentle Facial Cleanser",
+      "slug": "gentle-facial-cleanser",
+      "category": "Beauty & Personal Care",
+      "brand": "GlowTheory",
+      "price": 19,
+      "originalPrice": 25,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 418,
+      "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A gentle cleanser for a simple, refreshing daily skincare routine.",
+      "colors": [
+        "White"
+      ],
+      "sizes": [
+        "150 ml"
+      ],
+      "stock": 52,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "skincare",
+        "cleanser"
+      ]
+    },
+    {
+      "id": "prod_034",
+      "name": "Botanical Hand Wash",
+      "slug": "botanical-hand-wash",
+      "category": "Beauty & Personal Care",
+      "brand": "Botanica",
+      "price": 16,
+      "originalPrice": 21,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviewCount": 239,
+      "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A botanical-inspired hand wash for a fresh sink-side essential.",
+      "colors": [
+        "Clear",
+        "Amber"
+      ],
+      "sizes": [
+        "300 ml"
+      ],
+      "stock": 33,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "body care",
+        "bath"
+      ]
+    },
+    {
+      "id": "prod_035",
+      "name": "Signature Eau de Parfum",
+      "slug": "signature-eau-de-parfum",
+      "category": "Beauty & Personal Care",
+      "brand": "Maison Vale",
+      "price": 75,
+      "originalPrice": 95,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 365,
+      "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A sophisticated fragrance with a balanced profile for day-to-evening wear.",
+      "colors": [
+        "Amber"
+      ],
+      "sizes": [
+        "50 ml",
+        "100 ml"
+      ],
+      "stock": 17,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "fragrance",
+        "beauty"
+      ]
+    },
+    {
+      "id": "prod_036",
+      "name": "Classic Ceramic Planter",
+      "slug": "classic-ceramic-planter",
+      "category": "Home & Living",
+      "brand": "GreenNest",
+      "price": 29,
+      "originalPrice": 38,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 282,
+      "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A simple ceramic planter for bringing greenery to desks and shelves.",
+      "colors": [
+        "White",
+        "Sand",
+        "Terracotta"
+      ],
+      "sizes": [
+        "Small",
+        "Medium"
+      ],
+      "stock": 31,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "plants",
+        "decor"
+      ]
+    },
+    {
+      "id": "prod_037",
+      "name": "Modern Table Vase",
+      "slug": "modern-table-vase",
+      "category": "Home & Living",
+      "brand": "FormLiving",
+      "price": 34,
+      "originalPrice": 44,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 174,
+      "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A sculptural vase that works as a standalone accent or with fresh stems.",
+      "colors": [
+        "Cream",
+        "Black"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 15,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "decor",
+        "vase"
+      ]
+    },
+    {
+      "id": "prod_038",
+      "name": "Compact Mirrorless Camera",
+      "slug": "compact-mirrorless-camera",
+      "category": "Electronics",
+      "brand": "Vista",
+      "price": 799,
+      "originalPrice": 899,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 326,
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A compact camera concept for creators who want portable everyday photography.",
+      "colors": [
+        "Black"
+      ],
+      "sizes": [
+        "Body Only"
+      ],
+      "stock": 7,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "camera",
+        "photography"
+      ]
+    },
+    {
+      "id": "prod_039",
+      "name": "Instant Photo Camera",
+      "slug": "instant-photo-camera",
+      "category": "Electronics",
+      "brand": "Vista",
+      "price": 99,
+      "originalPrice": 129,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 417,
+      "image": "https://images.unsplash.com/photo-1510127034890-1e589a88b22f?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1510127034890-1e589a88b22f?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Capture moments and create tangible keepsakes with an easy-to-use instant camera.",
+      "colors": [
+        "White",
+        "Mint",
+        "Pink"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 18,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "camera",
+        "instant"
+      ]
+    },
+    {
+      "id": "prod_040",
+      "name": "Portable SSD 1TB",
+      "slug": "portable-ssd-1tb",
+      "category": "Electronics",
+      "brand": "DataNest",
+      "price": 109,
+      "originalPrice": 139,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 284,
+      "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Fast portable storage for creative projects, backups, and everyday files.",
+      "colors": [
+        "Black",
+        "Silver"
+      ],
+      "sizes": [
+        "1 TB"
+      ],
+      "stock": 22,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "storage",
+        "tech"
+      ]
+    },
+    {
+      "id": "prod_041",
+      "name": "Wireless Charging Stand",
+      "slug": "wireless-charging-stand",
+      "category": "Electronics",
+      "brand": "Volt",
+      "price": 35,
+      "originalPrice": 45,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviewCount": 351,
+      "image": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A tidy charging stand that keeps compatible devices visible on your desk.",
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 28,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "charging",
+        "desk"
+      ]
+    },
+    {
+      "id": "prod_042",
+      "name": "Laptop Sleeve 14-inch",
+      "slug": "laptop-sleeve-14-inch",
+      "category": "Accessories",
+      "brand": "CarryKind",
+      "price": 29,
+      "originalPrice": 39,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 408,
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A padded sleeve designed to protect a laptop during daily commutes.",
+      "colors": [
+        "Grey",
+        "Black",
+        "Sand"
+      ],
+      "sizes": [
+        "13 inch",
+        "14 inch",
+        "16 inch"
+      ],
+      "stock": 46,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "laptop",
+        "travel"
+      ]
+    },
+    {
+      "id": "prod_043",
+      "name": "Premium Notebook Set",
+      "slug": "premium-notebook-set",
+      "category": "Stationery",
+      "brand": "PaperTrail",
+      "price": 21,
+      "originalPrice": 28,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 263,
+      "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A coordinated notebook set for journaling, planning, and everyday notes.",
+      "colors": [
+        "Neutral",
+        "Pastel"
+      ],
+      "sizes": [
+        "A5"
+      ],
+      "stock": 58,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "stationery",
+        "office"
+      ]
+    },
+    {
+      "id": "prod_044",
+      "name": "Desk Organizer Tray",
+      "slug": "desk-organizer-tray",
+      "category": "Home & Living",
+      "brand": "FormLiving",
+      "price": 25,
+      "originalPrice": 33,
+      "currency": "USD",
+      "rating": 4.2,
+      "reviewCount": 187,
+      "image": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A minimal tray to keep keys, stationery, and small desk essentials organized.",
+      "colors": [
+        "Oak",
+        "Black"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 30,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "organization",
+        "desk"
+      ]
+    },
+    {
+      "id": "prod_045",
+      "name": "Kids Color Block Hoodie",
+      "slug": "kids-color-block-hoodie",
+      "category": "Kids & Baby",
+      "brand": "LittleNorth",
+      "price": 36,
+      "originalPrice": 46,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 221,
+      "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A cozy color-block hoodie made for everyday play and layering.",
+      "colors": [
+        "Blue",
+        "Green",
+        "Pink"
+      ],
+      "sizes": [
+        "2Y",
+        "4Y",
+        "6Y",
+        "8Y"
+      ],
+      "stock": 25,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "kids",
+        "clothing"
+      ]
+    },
+    {
+      "id": "prod_046",
+      "name": "Everyday Baby Backpack",
+      "slug": "everyday-baby-backpack",
+      "category": "Kids & Baby",
+      "brand": "LittleNorth",
+      "price": 32,
+      "originalPrice": 42,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 153,
+      "image": "https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A lightweight little backpack for outings, daycare, and small essentials.",
+      "colors": [
+        "Yellow",
+        "Blue",
+        "Pink"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 19,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "kids",
+        "bag"
+      ]
+    },
+    {
+      "id": "prod_047",
+      "name": "Pet Comfort Bed",
+      "slug": "pet-comfort-bed",
+      "category": "Pet Supplies",
+      "brand": "PawHaven",
+      "price": 59,
+      "originalPrice": 75,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 386,
+      "image": "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A plush pet bed designed to create a comfortable resting spot at home.",
+      "colors": [
+        "Grey",
+        "Sand"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "stock": 13,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "pet",
+        "comfort"
+      ]
+    },
+    {
+      "id": "prod_048",
+      "name": "Rope Dog Leash",
+      "slug": "rope-dog-leash",
+      "category": "Pet Supplies",
+      "brand": "PawHaven",
+      "price": 24,
+      "originalPrice": 31,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 208,
+      "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A sturdy everyday leash with a comfortable grip for regular walks.",
+      "colors": [
+        "Black",
+        "Red",
+        "Olive"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "stock": 37,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "pet",
+        "walking"
+      ]
+    },
+    {
+      "id": "prod_049",
+      "name": "Insulated Lunch Tote",
+      "slug": "insulated-lunch-tote",
+      "category": "Accessories",
+      "brand": "CarryKind",
+      "price": 27,
+      "originalPrice": 35,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviewCount": 194,
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A compact insulated tote for carrying lunch and snacks on the go.",
+      "colors": [
+        "Sage",
+        "Navy",
+        "Cream"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 26,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "lunch",
+        "everyday"
+      ]
+    },
+    {
+      "id": "prod_050",
+      "name": "Classic Oxford Shirt",
+      "slug": "classic-oxford-shirt",
+      "category": "Men's Fashion",
+      "brand": "Northline",
+      "price": 49,
+      "originalPrice": 62,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 322,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A versatile button-down shirt for smart-casual outfits and office days.",
+      "colors": [
+        "White",
+        "Blue",
+        "Stripe"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 33,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "shirt",
+        "workwear"
+      ]
+    },
+    {
+      "id": "prod_051",
+      "name": "Women's Everyday Tote",
+      "slug": "womens-everyday-tote",
+      "category": "Women's Fashion",
+      "brand": "CarryKind",
+      "price": 52,
+      "originalPrice": 68,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 441,
+      "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A roomy everyday tote with space for your daily essentials.",
+      "colors": [
+        "Tan",
+        "Black",
+        "Cream"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 21,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "bag",
+        "everyday"
+      ]
+    },
+    {
+      "id": "prod_052",
+      "name": "Lightweight Rain Jacket",
+      "slug": "lightweight-rain-jacket",
+      "category": "Sports & Outdoors",
+      "brand": "TrailWorks",
+      "price": 84,
+      "originalPrice": 105,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 267,
+      "image": "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A lightweight outer layer for changeable weather and outdoor errands.",
+      "colors": [
+        "Navy",
+        "Olive",
+        "Black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 16,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "outerwear",
+        "outdoors"
+      ]
+    },
+    {
+      "id": "prod_053",
+      "name": "Polar Fleece Zip Jacket",
+      "slug": "polar-fleece-zip-jacket",
+      "category": "Men's Fashion",
+      "brand": "Northline",
+      "price": 72,
+      "originalPrice": 89,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 301,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A soft zip-up fleece for cool weather and comfortable layering.",
+      "colors": [
+        "Grey",
+        "Black",
+        "Forest"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 28,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "fleece",
+        "outerwear"
+      ]
+    },
+    {
+      "id": "prod_054",
+      "name": "Everyday Slip-On Loafers",
+      "slug": "everyday-slip-on-loafers",
+      "category": "Men's Fashion",
+      "brand": "UrbanCraft",
+      "price": 74,
+      "originalPrice": 92,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviewCount": 188,
+      "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Easy slip-on loafers with a clean profile for casual smart dressing.",
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "stock": 12,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "shoes",
+        "smart casual"
+      ]
+    },
+    {
+      "id": "prod_055",
+      "name": "Minimal Gold Hoop Earrings",
+      "slug": "minimal-gold-hoop-earrings",
+      "category": "Accessories",
+      "brand": "Luma",
+      "price": 28,
+      "originalPrice": 36,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 507,
+      "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "Lightweight hoops with a minimal finish for everyday styling.",
+      "colors": [
+        "Gold",
+        "Silver"
+      ],
+      "sizes": [
+        "Small",
+        "Medium"
+      ],
+      "stock": 40,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "jewelry",
+        "accessories"
+      ]
+    },
+    {
+      "id": "prod_056",
+      "name": "Everyday Sunglasses Case",
+      "slug": "everyday-sunglasses-case",
+      "category": "Accessories",
+      "brand": "Sunform",
+      "price": 15,
+      "originalPrice": 20,
+      "currency": "USD",
+      "rating": 4.2,
+      "reviewCount": 119,
+      "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A compact protective case for keeping sunglasses safe in a bag.",
+      "colors": [
+        "Black",
+        "Tan"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 61,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "accessories",
+        "travel"
+      ]
+    },
+    {
+      "id": "prod_057",
+      "name": "Compact Air Fryer",
+      "slug": "compact-air-fryer",
+      "category": "Home & Living",
+      "brand": "KitchenLab",
+      "price": 89,
+      "originalPrice": 119,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 628,
+      "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A compact countertop appliance for quick, convenient everyday cooking.",
+      "colors": [
+        "Black",
+        "Cream"
+      ],
+      "sizes": [
+        "4 L"
+      ],
+      "stock": 9,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "kitchen",
+        "appliance"
+      ]
+    },
+    {
+      "id": "prod_058",
+      "name": "Pour-Over Coffee Kit",
+      "slug": "pour-over-coffee-kit",
+      "category": "Home & Living",
+      "brand": "KitchenLab",
+      "price": 38,
+      "originalPrice": 49,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 337,
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A simple pour-over coffee kit for a calm and consistent morning brew.",
+      "colors": [
+        "Black",
+        "Glass"
+      ],
+      "sizes": [
+        "One Size"
+      ],
+      "stock": 24,
+      "inStock": true,
+      "featured": true,
+      "tags": [
+        "coffee",
+        "kitchen"
+      ]
+    },
+    {
+      "id": "prod_059",
+      "name": "Soft Bath Towel Set",
+      "slug": "soft-bath-towel-set",
+      "category": "Home & Living",
+      "brand": "Hearth & Home",
+      "price": 42,
+      "originalPrice": 55,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 296,
+      "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A coordinated towel set with a soft feel for everyday bathroom use.",
+      "colors": [
+        "White",
+        "Sand",
+        "Sage"
+      ],
+      "sizes": [
+        "Set of 2"
+      ],
+      "stock": 32,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "bath",
+        "textile"
+      ]
+    },
+    {
+      "id": "prod_060",
+      "name": "Travel Packing Cubes",
+      "slug": "travel-packing-cubes",
+      "category": "Sports & Outdoors",
+      "brand": "TrailWorks",
+      "price": 31,
+      "originalPrice": 40,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 362,
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+      ],
+      "description": "A set of packing cubes to keep clothing and travel essentials organized.",
+      "colors": [
+        "Black",
+        "Sage",
+        "Blue"
+      ],
+      "sizes": [
+        "Set of 4"
+      ],
+      "stock": 43,
+      "inStock": true,
+      "featured": false,
+      "tags": [
+        "travel",
+        "organization"
+      ]
+    }
+  ]
+}
