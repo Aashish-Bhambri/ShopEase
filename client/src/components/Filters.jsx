@@ -1,119 +1,193 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import { RotateCcw, X, SlidersHorizontal } from 'lucide-react';
 
-const Filters = ({ category, setCategory, range, setRange, filterBrand, setFilterBrand, brands = [] }) => {
-    const [draftRange, setDraftRange] = useState(range)
+const Filters = ({
+  category,
+  setCategory,
+  range,
+  setRange,
+  filterBrand,
+  setFilterBrand,
+  brands = [],
+  onCloseMobile,
+}) => {
+  const [draftRange, setDraftRange] = useState(range);
 
-    const categories = [
-        "Men's Fashion",
-        "Women's Fashion",
-        "Electronics",
-        "Home & Living",
-        "Beauty & Personal Care",
-        "Sports & Outdoors"
-    ]
-    const categoryBrands = brands.find((item) => item.id === category)?.brand ?? []
+  useEffect(() => {
+    setDraftRange(range);
+  }, [range]);
 
-    return (
-        // Added max-w-sm to restrain size, min-w-[280px] to prevent extreme compression, and right-border separation
-        <div className='flex flex-col p-6 w-full max-w-xs min-w-[280px] border-r border-gray-200 bg-white gap-6 h-screen '>
+  const categories = [
+    "Men's Fashion",
+    "Women's Fashion",
+    "Electronics",
+    "Home & Living",
+    "Beauty & Personal Care",
+    "Sports & Outdoors",
+  ];
 
-            {/* Header section */}
-            <h2 className='font-bold text-2xl text-gray-800 tracking-tight'>Filters</h2>
+  const categoryBrands = brands.find((item) => item.id === category)?.brand ?? [];
 
-            {/* Cleaner divider item */}
-            <hr className='border-gray-200' />
+  const hasActiveFilters = Boolean(category || filterBrand || range < 5000);
 
-            {/* Categories segment */}
-            <div className='flex flex-col gap-3'>
-                <span className='text-[18px] font-semibold text-gray-700 mb-1'>Category</span>
-                <div className='flex flex-col gap-2'>
-                    {categories.map((cat) => (
-                        <div key={cat} className='flex items-center gap-3 cursor-pointer group'>
-                            <input
-                                className='h-4 w-4 accent-black cursor-pointer rounded'
-                                type="checkbox"
-                                id={cat.replaceAll(' ', '')}
-                                value={cat}
-                                checked={category === cat}
-                                onChange={(e) => {
-                                    setCategory(category === cat ? "" : e.target.value)
-                                    setFilterBrand("")
-                                }}
-                            />
-                            <label
-                                htmlFor={cat.replaceAll(' ', '')}
-                                className='text-sm text-gray-600 font-medium cursor-pointer group-hover:text-black transition-colors'
-                            >
-                                {cat}
-                            </label>
-                        </div>
-                    ))}
-                </div>
-            </div>
+  const handleReset = () => {
+    setCategory('');
+    setFilterBrand('');
+    setRange(5000);
+    setDraftRange(5000);
+  };
 
-            <hr className='border-gray-200' />
-
-            {/* Price Slider Component */}
-            <div className='flex flex-col gap-3'>
-                <span className='font-semibold text-[18px] text-gray-700'>Price range</span>
-
-                {/* Made range slider take full width of the filter block */}
-                <input
-                    className='w-full accent-black cursor-pointer h-1.5 bg-gray-200 rounded-lg appearance-none'
-                    type='range'
-                    min={50}
-                    max={5000}
-                    value={draftRange}
-                    onChange={(e) => setDraftRange(Number(e.target.value))}
-                />
-
-                {/* Synchronized layout positions for bottom display counts */}
-                <div className='flex justify-between w-full text-xs font-semibold text-gray-500 px-0.5'>
-                    <div>$50</div>
-                    <div className='text-black font-bold'>${draftRange}</div>
-                </div>
-
-                <button
-                    type='button'
-                    onClick={() => setRange(draftRange)}
-                    className='w-full bg-black hover:bg-gray-800 transition-colors font-medium rounded-xl text-white py-2 mt-2 text-sm shadow-sm'
-                >
-                    Apply
-                </button>
-            </div>
-
-            <hr className='border-gray-200' />
-
-            {/* Brands segment */}
-            <div className='flex flex-col gap-3 pb-6'>
-                <span className='font-semibold text-[18px] text-gray-700 mb-1'>Brand</span>
-
-                <div className='flex flex-col gap-2'>
-                    {categoryBrands.length > 0 ? categoryBrands.map((item) => (
-                        <div key={item} className='flex items-center gap-3 cursor-pointer group'>
-                            <input
-                                type='checkbox'
-                                id={`brand-${item}`}
-                                value={item}
-                                checked={filterBrand === item}
-                                className='h-4 w-4 accent-black cursor-pointer rounded'
-                                onChange={(e) => setFilterBrand(filterBrand === item ? "" : e.target.value)}
-                            />
-                            <label
-                                htmlFor={`brand-${item}`}
-                                className='text-sm text-gray-600 font-medium cursor-pointer group-hover:text-black transition-colors'
-                            >
-                                {item}
-                            </label>
-                        </div>
-                    )) : (
-                        <span className='text-sm text-gray-500'>Select a category to see brands.</span>
-                    )}
-                </div>
-
-            </div>
+  return (
+    <div className="flex flex-col p-6 w-full bg-white gap-6">
+      {/* Header section */}
+      <div className="flex items-center justify-between pb-2 border-b border-gray-100">
+        <div className="flex items-center gap-2">
+          <SlidersHorizontal size={18} className="text-gray-900" />
+          <h2 className="font-bold text-xl text-gray-900 tracking-tight">Filters</h2>
         </div>
-    )
-}
 
-export default Filters
+        <div className="flex items-center gap-2">
+          {hasActiveFilters && (
+            <button
+              type="button"
+              onClick={handleReset}
+              className="text-xs font-semibold text-gray-500 hover:text-black flex items-center gap-1 transition"
+            >
+              <RotateCcw size={12} />
+              <span>Reset</span>
+            </button>
+          )}
+
+          {onCloseMobile && (
+            <button
+              type="button"
+              onClick={onCloseMobile}
+              className="p-1 rounded-lg text-gray-500 hover:bg-gray-100 md:hidden"
+              aria-label="Close filters"
+            >
+              <X size={20} />
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Categories segment */}
+      <div className="flex flex-col gap-3">
+        <span className="text-sm font-bold uppercase tracking-wider text-gray-900">
+          Category
+        </span>
+        <div className="flex flex-col gap-2.5">
+          {categories.map((cat) => (
+            <label
+              key={cat}
+              className="flex items-center gap-3 cursor-pointer group select-none text-sm"
+            >
+              <input
+                className="h-4 w-4 accent-black cursor-pointer rounded"
+                type="checkbox"
+                value={cat}
+                checked={category === cat}
+                onChange={(e) => {
+                  setCategory(category === cat ? '' : e.target.value);
+                  setFilterBrand('');
+                }}
+              />
+              <span
+                className={`font-medium transition-colors ${
+                  category === cat
+                    ? 'text-black font-bold'
+                    : 'text-gray-600 group-hover:text-black'
+                }`}
+              >
+                {cat}
+              </span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <hr className="border-gray-200" />
+
+      {/* Price Slider Component */}
+      <div className="flex flex-col gap-3">
+        <div className="flex items-center justify-between">
+          <span className="text-sm font-bold uppercase tracking-wider text-gray-900">
+            Price Ceiling
+          </span>
+          <span className="text-sm font-bold text-black">${draftRange}</span>
+        </div>
+
+        <input
+          className="w-full accent-black cursor-pointer h-2 bg-gray-200 rounded-lg appearance-none"
+          type="range"
+          min={30}
+          max={5000}
+          step={10}
+          value={draftRange}
+          onChange={(e) => setDraftRange(Number(e.target.value))}
+        />
+
+        <div className="flex justify-between w-full text-xs font-semibold text-gray-400">
+          <span>Min: $30</span>
+          <span>Max: $5000</span>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => {
+            setRange(draftRange);
+            if (onCloseMobile) onCloseMobile();
+          }}
+          className="w-full bg-black hover:bg-gray-800 transition-colors font-semibold rounded-xl text-white py-2.5 mt-1 text-xs shadow-xs"
+        >
+          Apply Price Filter
+        </button>
+      </div>
+
+      <hr className="border-gray-200" />
+
+      {/* Brands segment */}
+      <div className="flex flex-col gap-3 pb-4">
+        <span className="text-sm font-bold uppercase tracking-wider text-gray-900">
+          Brand
+        </span>
+
+        <div className="flex flex-col gap-2.5">
+          {categoryBrands.length > 0 ? (
+            categoryBrands.map((item) => (
+              <label
+                key={item}
+                className="flex items-center gap-3 cursor-pointer group select-none text-sm"
+              >
+                <input
+                  type="checkbox"
+                  value={item}
+                  checked={filterBrand === item}
+                  className="h-4 w-4 accent-black cursor-pointer rounded"
+                  onChange={(e) =>
+                    setFilterBrand(filterBrand === item ? '' : e.target.value)
+                  }
+                />
+                <span
+                  className={`font-medium transition-colors ${
+                    filterBrand === item
+                      ? 'text-black font-bold'
+                      : 'text-gray-600 group-hover:text-black'
+                  }`}
+                >
+                  {item}
+                </span>
+              </label>
+            ))
+          ) : (
+            <p className="text-xs text-gray-400 italic">
+              Select a category above to view available brands.
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Filters;

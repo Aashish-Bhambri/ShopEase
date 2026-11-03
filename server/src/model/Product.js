@@ -137,7 +137,7 @@ productSchema.pre("save", function (next) {
         this.originalPrice = this.price;
     }
     if (this.isModified("discountPercentage") && this.discountPercentage > 0) {
-        const DiscountAmount = (this.originalPrice * this.price) / 100;
+        const DiscountAmount = (this.originalPrice * this.discountPercentage) / 100;
         this.price = Math.round((this.originalPrice - DiscountAmount) * 100) / 100;
     }
     else if (this.originalPrice > this.price) {

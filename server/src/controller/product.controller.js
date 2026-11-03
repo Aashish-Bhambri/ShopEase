@@ -1,4 +1,5 @@
 // src/controllers/productController.js
+import mongoose from "mongoose";
 import Product from "../model/Product.js";
 
 // GET /api/products - Supports search, category, brand, price, & sort
@@ -42,8 +43,6 @@ export const getProducts = async (req, res) => {
   }
 };
 
-
-
 // GET /api/products/bestsellers - Featured items for homepage 
 export const getBestSellers = async (req, res) => {
   try {
@@ -54,11 +53,24 @@ export const getBestSellers = async (req, res) => {
   }
 };
 
-// GET /api/products/:slug - Single product details page
+// GET /api/products/:slug - Single product details page (supports slug, ObjectId, or id)
 export const getProductBySlug = async (req, res) => {
   try {
-    const product = await Product.findOne({ slug: req.params.slug });
-    if (!product) return res.status(404).json({ message: "Product not found" });
+    const { slug } = req.params;
+    let product = await Product.findOne({ slug });
+
+    if (!product && mongoose.isValidObjectId(slug)) {
+      product = await Product.findById(slug);
+    }
+
+    if (!product) {
+      product = await Product.findOne({ id: slug });
+    }
+
+    if (!product) {
+      return res.status(404).json({ success: false, message: "Product not found" });
+    }
+
     res.json({ success: true, product });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
