@@ -15,21 +15,49 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+let connectionPromise;
+
+const connectToDatabase = () => {
+  const mongoUri = process.env.MONGO_URI?.trim();
+  if (!mongoUri) {
+    return Promise.reject(
+      new Error("MONGO_URI is not set. Add it to server/.env or the environment before starting the server.")
+    );
+  }
+
+  if (!connectionPromise) {
+    connectionPromise = mongoose.connect(mongoUri).catch((error) => {
+      connectionPromise = undefined;
+      throw error;
+    });
+  }
+
+  return connectionPromise;
+};
+
+app.use("/api", async (req, res, next) => {
+  try {
+    await connectToDatabase();
+    next();
+  } catch (error) {
+    console.error("MongoDB connection failed:", error);
+    next(error);
+  }
+});
+
 // Mount product API
 app.use("/api/products", productRoute);
 
-const startServer = async () => {
-  const mongoUri = process.env.MONGO_URI?.trim();
-  if (!mongoUri) {
-    throw new Error("MONGO_URI is not set. Add it to server/.env or the environment before starting the server.");
-  }
+export default app;
 
-  await mongoose.connect(mongoUri);
-  console.log("Connected to MongoDB");
-  app.listen(5000, () => console.log("Server running on port 5000"));
-};
-
-startServer().catch((error) => {
-  console.error("Server startup failed:", error);
-  process.exitCode = 1;
-});
+if (!process.env.VERCEL) {
+  connectToDatabase()
+    .then(() => {
+      console.log("Connected to MongoDB");
+      app.listen(Number(process.env.PORT) || 5000, () => console.log("Server running"));
+    })
+    .catch((error) => {
+      console.error("Server startup failed:", error);
+      process.exitCode = 1;
+    });
+}
