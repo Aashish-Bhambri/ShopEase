@@ -6,6 +6,8 @@ import dotenv from "dotenv";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import productRoute from "./src/routes/productRoute.js";
+import adminRoute from "./src/routes/adminRoute.js";
+
 
 const serverDirectory = dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: resolve(serverDirectory, ".env") });
@@ -47,7 +49,7 @@ app.use("/api", async (req, res, next) => {
 
 // Mount product API
 app.use("/api/products", productRoute);
-
+app.use("/api", adminRoute);
 export default app;
 
 if (!process.env.VERCEL) {

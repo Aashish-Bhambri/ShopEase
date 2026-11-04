@@ -9,8 +9,8 @@ import About from "./pages/About";
 import Checkout from "./pages/Checkout";
 import AdminHomePage from "./pages/AdminHomePage";
 import AdminSidebar from "./components/AdminSidebar";
-import AdminDashboard from "./components/adminDashboard";
-import AdminProducts from "./components/adminProducts";
+import AdminDashboard from "./components/AdminDashboard";
+import AdminProducts from "./components/AdminProducts";
 
 function App() {
   return (
@@ -28,12 +28,11 @@ function App() {
         </Route>
 
         <Route>
-          <Route path="/admin/login" element={< AdminHomePage />} />
+          <Route path="/admin/login" element={<AdminHomePage />} />
         </Route>
-        <Route element={<AdminSidebar />} >
+        <Route element={<AdminSidebar />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/products" element={<AdminProducts />} />
-
         </Route>
       </Routes>
     </BrowserRouter>
