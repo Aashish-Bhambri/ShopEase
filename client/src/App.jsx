@@ -7,6 +7,10 @@ import Shop from "./pages/Shop";
 import Categories from "./pages/Categories";
 import About from "./pages/About";
 import Checkout from "./pages/Checkout";
+import AdminHomePage from "./pages/AdminHomePage";
+import AdminSidebar from "./components/AdminSidebar";
+import AdminDashboard from "./components/adminDashboard";
+import AdminProducts from "./components/adminProducts";
 
 function App() {
   return (
@@ -21,6 +25,15 @@ function App() {
           <Route path="/products/:slug" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+        </Route>
+
+        <Route>
+          <Route path="/admin/login" element={< AdminHomePage />} />
+        </Route>
+        <Route element={<AdminSidebar />} >
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/products" element={<AdminProducts />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
