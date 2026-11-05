@@ -19,7 +19,15 @@ const AdminLogin = ({ setIsLoggedin }) => {
             });
 
             if (res.data.success) {
-                localStorage.setItem('adminToken', res.data.data);
+                const accessToken = res.data.accessToken || res.data.data;
+                const refreshToken = res.data.refreshToken;
+
+                localStorage.setItem('adminAccessToken', accessToken);
+                localStorage.setItem('adminToken', accessToken);
+                if (refreshToken) {
+                    localStorage.setItem('adminRefreshToken', refreshToken);
+                }
+
                 setIsLoggedin(true);
             }
         } catch (error) {

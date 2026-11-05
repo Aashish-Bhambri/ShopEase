@@ -1,13 +1,18 @@
-import { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 
-const AdminSchema= Mongoose.Svhema({
-    token:{
-
+const AdminSchema = new mongoose.Schema({
+    email: {
+        type: String,
+        required: true,
+        unique: true
     },
-    email:{
-        
+    password: {
+        type: String,
+        required: true
     },
-    password:{
-
+    refreshToken: {
+        type: String
     }
-})
+}, { timestamps: true });
+
+export default mongoose.models.Admin || mongoose.model("Admin", AdminSchema);
