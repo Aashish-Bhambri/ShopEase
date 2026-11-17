@@ -51,6 +51,19 @@ app.use("/api", async (req, res, next) => {
 // Mount product API
 app.use("/api/products", productRoute);
 app.use("/api", adminRoute);
+
+// Root health-check endpoint
+app.get("/", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    message: "ShopEase API Server is running",
+    endpoints: {
+      products: "/api/products",
+      bestsellers: "/api/products/bestsellers"
+    }
+  });
+});
+
 export default app;
 
 if (!process.env.VERCEL) {
