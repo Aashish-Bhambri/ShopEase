@@ -7,6 +7,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import productRoute from "./src/routes/productRoute.js";
 import adminRoute from "./src/routes/adminRoute.js";
+import { connectRedis } from "./src/service/redis.js";
 
 
 const serverDirectory = dirname(fileURLToPath(import.meta.url));
@@ -53,10 +54,12 @@ app.use("/api", adminRoute);
 export default app;
 
 if (!process.env.VERCEL) {
-  connectToDatabase()
+  const port = process.env.PORT
+  Promise.all([connectToDatabase(), connectRedis()])
     .then(() => {
       console.log("Connected to MongoDB");
-      app.listen(Number(process.env.PORT) || 5000, () => console.log("Server running"));
+      console.log("Connected to Redis");
+      app.listen(Number(port) || 5000, () => console.log(`Server running at ${port}`));
     })
     .catch((error) => {
       console.error("Server startup failed:", error);

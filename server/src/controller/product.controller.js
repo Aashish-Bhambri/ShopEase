@@ -115,7 +115,7 @@ export const createProduct = async (req, res) => {
     // The pre('save') hook runs here automatically:
     // It calculates discountPercentage and sets inStock = true/false
     const savedProduct = await product.save();
-
+    await invalidateProductCache(savedProduct.slug, savedProduct._id);
     res.status(201).json({
       success: true,
       message: "Product created successfully",
