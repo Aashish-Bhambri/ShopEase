@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import ProductDetails from "./components/ProductDetails";
@@ -27,9 +27,9 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
         </Route>
 
-        <Route>
-          <Route path="/admin/login" element={<AdminHomePage />} />
-        </Route>
+        <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
+        <Route path="/admin/login" element={<AdminHomePage />} />
+
         <Route element={<AdminSidebar />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/products" element={<AdminProducts />} />
