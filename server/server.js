@@ -40,10 +40,10 @@ const connectToDatabase = () => {
 
 app.use("/api", async (req, res, next) => {
   try {
-    await connectToDatabase();
+    await Promise.all([connectToDatabase(), connectRedis()]);
     next();
   } catch (error) {
-    console.error("MongoDB connection failed:", error);
+    console.error("Connection failed:", error);
     next(error);
   }
 });

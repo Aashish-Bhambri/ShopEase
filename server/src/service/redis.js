@@ -1,13 +1,41 @@
 import { createClient } from "redis";
 
-const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+const getCleanRedisUrl = () => {
+  const rawUrl = (process.env.REDIS_URL || "redis://localhost:6379").trim();
+  // Strip accidental "REDIS_URL=" prefix or surrounding quotes if copied with key
+  return rawUrl
+    .replace(/^REDIS_URL\s*=\s*/i, "")
+    .replace(/^["']|["']$/g, "")
+    .trim();
+};
 
-export const redis = createClient({ url: redisUrl });
-redis.on("error", (err) => console.error("Redis error:", err));
+let client;
+try {
+  client = createClient({
+    url: getCleanRedisUrl(),
+    socket: {
+      reconnectStrategy: (retries) => {
+        if (retries > 3) return false;
+        return Math.min(retries * 500, 2000);
+      }
+    }
+  });
+  client.on("error", (err) => console.error("Redis error:", err.message));
+} catch (err) {
+  console.error("Failed to initialize Redis client:", err.message);
+  client = { isOpen: false };
+}
+
+export const redis = client;
 
 export async function connectRedis() {
-  if (!redis.isOpen) {
-    await redis.connect();
+  try {
+    if (redis && typeof redis.connect === "function" && !redis.isOpen) {
+      await redis.connect();
+      console.log("Connected to Redis");
+    }
+  } catch (err) {
+    console.warn("Redis connection failed, running without cache:", err.message);
   }
 }
 
